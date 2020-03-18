@@ -1,0 +1,12 @@
+type Thing {
+  id: ID!,
+  name: String
+}
+
+type Mutation {
+  createThing(name: String): String
+}
+
+type Query {
+  allThings: [Thing]
+}
